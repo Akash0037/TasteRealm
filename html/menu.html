@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - TasteRealm</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">TasteRealm</a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="menu.html" class="nav-link">Menu</a>
+          <a href="order.html" class="nav-link">Order</a>
+          <a href="cart.html" class="nav-link cart-link">
+            <img src="../assests/cart_image.png" alt="Cart" class="cart-icon" />
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+        <div class="menuBar" id="menuBar">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our Menu</h1>
+        <p>Discover authentic Indian culinary creations</p>
+      </div>
+    </section>
+
+    <!-- Menu Filters -->
+    <section class="menu-filters">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Items</button>
+          <button class="filter-btn" data-filter="veg">Vegetarian</button>
+          <button class="filter-btn" data-filter="nonveg">
+            Non-Vegetarian
+          </button>
+          <button class="filter-btn" data-filter="breads">Breads</button>
+          <button class="filter-btn" data-filter="rice">Rice Dishes</button>
+          <button class="filter-btn" data-filter="beverages">Beverages</button>
+          <button class="filter-btn" data-filter="sweets">Sweets</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="menu-items-section">
+      <div class="container">
+        <div class="menu-grid" id="menu-grid">
+          <!-- Vegetarian Main Courses -->
+          <div
+            class="menu-item"
+            data-category="veg"
+            data-id="veg-1"
+            data-name="Paneer Butter Masala"
+            data-price="280"
+            data-image="../assests/veg/paneer-butter-masala.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/veg/paneer-butter-masala.jpg"
+                alt="Paneer Butter Masala"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Paneer Butter Masala
+                <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>
+                Soft cottage cheese in rich, creamy tomato gravy with butter and
+                spices
+              </p>
+              <div class="menu-price">₹280</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="veg"
+            data-id="veg-2"
+            data-name="Chole Bhature"
+            data-price="220"
+            data-image="../assests/veg/chole_bhature.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/veg/chole_bhature.jpg" alt="Chole Bhature" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Chole Bhature
+                <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Spicy chickpea curry served with fluffy deep-fried bread</p>
+              <div class="menu-price">₹220</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="veg"
+            data-id="veg-3"
+            data-name="Vegetable Biryani"
+            data-price="240"
+            data-image="../assests/veg/veggetable_biryani.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/veg/veggetable_biryani.jpg"
+                alt="Vegetable Biryani"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Vegetable Biryani
+                <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>
+                Fragrant basmati rice cooked with mixed vegetables and aromatic
+                spices
+              </p>
+              <div class="menu-price">₹240</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="veg"
+            data-id="veg-4"
+            data-name="Palak Paneer"
+            data-price="260"
+            data-image="../assests/veg/palak_paneer.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/veg/palak_paneer.jpg" alt="Palak Paneer" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Palak Paneer
+                <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Fresh spinach curry with soft paneer cubes and mild spices</p>
+              <div class="menu-price">₹260</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="veg"
+            data-id="veg-5"
+            data-name="Masala Dosa"
+            data-price="180"
+            data-image="../assests/veg/masala_dosa.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/veg/masala_dosa.jpg" alt="Masala Dosa" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Masala Dosa <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>
+                Crispy fermented rice crepe filled with spiced potato filling
+              </p>
+              <div class="menu-price">₹180</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="veg"
+            data-id="veg-6"
+            data-name="Dal Makhani"
+            data-price="200"
+            data-image="../assests/veg/dal_makhni.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/veg/dal_makhni.jpg" alt="Dal Makhani" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Dal Makhani <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Creamy black lentils slow-cooked with butter and spices</p>
+              <div class="menu-price">₹200</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Non-Vegetarian Main Courses -->
+          <div
+            class="menu-item"
+            data-category="nonveg"
+            data-id="nonveg-1"
+            data-name="Butter Chicken"
+            data-price="320"
+            data-image="../assests/non-veg/butter_chicken.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/non-veg/butter_chicken.jpg"
+                alt="Butter Chicken"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Butter Chicken
+                <span class="category-badge category-nonveg">Non-Veg</span>
+              </h3>
+              <p>Tender chicken in rich, creamy tomato and butter sauce</p>
+              <div class="menu-price">₹320</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="nonveg"
+            data-id="nonveg-2"
+            data-name="Chicken Tikka Masala"
+            data-price="300"
+            data-image="../assests/non-veg/Chicken_Tikka_Masala.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/non-veg/Chicken_Tikka_Masala.jpg"
+                alt="Chicken Tikka Masala"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Chicken Tikka Masala
+                <span class="category-badge category-nonveg">Non-Veg</span>
+              </h3>
+              <p>Grilled chicken chunks in spicy, creamy tomato gravy</p>
+              <div class="menu-price">₹300</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="nonveg"
+            data-id="nonveg-3"
+            data-name="Mutton Rogan Josh"
+            data-price="380"
+            data-image="../assests/non-veg/mutton_rogan.jpeg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/non-veg/mutton_rogan.jpeg"
+                alt="Mutton Rogan Josh"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Mutton Rogan Josh
+                <span class="category-badge category-nonveg">Non-Veg</span>
+              </h3>
+              <p>
+                Aromatic Mutton curry from Kashmir with rich gravy and spices
+              </p>
+              <div class="menu-price">₹380</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="nonveg"
+            data-id="nonveg-4"
+            data-name="Chicken Biryani"
+            data-price="280"
+            data-image="../assests/non-veg/Chicken-Biryani.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/non-veg/Chicken-Biryani.jpg"
+                alt="Chicken Biryani"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Chicken Biryani
+                <span class="category-badge category-nonveg">Non-Veg</span>
+              </h3>
+              <p>Fragrant rice layered with marinated chicken and spices</p>
+              <div class="menu-price">₹280</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="nonveg"
+            data-id="nonveg-5"
+            data-name="Tandoori Chicken"
+            data-price="350"
+            data-image="../assests/non-veg/Tandoori_Chicken.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/non-veg/Tandoori_Chicken.jpg"
+                alt="Tandoori Chicken"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Tandoori Chicken
+                <span class="category-badge category-nonveg">Non-Veg</span>
+              </h3>
+              <p>Chicken marinated in yogurt and spices, cooked in clay oven</p>
+              <div class="menu-price">₹350</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="nonveg"
+            data-id="nonveg-6"
+            data-name="Fish Curry"
+            data-price="320"
+            data-image="../assests/non-veg/Fish_Curry.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/non-veg/Fish_Curry.jpg   "
+                alt="Fish Curry"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Fish Curry
+                <span class="category-badge category-nonveg">Non-Veg</span>
+              </h3>
+              <p>Fish fillets in spicy coconut and tamarind based gravy</p>
+              <div class="menu-price">₹320</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Breads -->
+          <div
+            class="menu-item"
+            data-category="breads"
+            data-id="bread-1"
+            data-name="Tandoori Roti"
+            data-price="40"
+            data-image="../assests/breads/Tandoori_Roti.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/breads/Tandoori_Roti.jpg"
+                alt="Tandoori Roti"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Tandoori Roti
+                <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Whole wheat bread cooked in traditional clay oven</p>
+              <div class="menu-price">₹40</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="breads"
+            data-id="bread-2"
+            data-name="Butter Naan"
+            data-price="60"
+            data-image="../assests/breads/butter_naan.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/breads/butter_naan.jpg" alt="Butter Naan" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Butter Naan <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Soft leavened bread brushed with butter, cooked in tandoor</p>
+              <div class="menu-price">₹60</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="breads"
+            data-id="bread-3"
+            data-name="Plain Naan"
+            data-price="50"
+            data-image="../assests/breads/plain-naan.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/breads/plain-naan.jpg" alt="Plain Naan" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Plain Naan <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Soft leavened bread cooked in traditional clay oven</p>
+              <div class="menu-price">₹50</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Rice Dishes -->
+          <div
+            class="menu-item"
+            data-category="rice"
+            data-id="rice-1"
+            data-name="Steamed Rice"
+            data-price="80"
+            data-image="../assests/rice/steamed-rice.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/rice/steamed-rice.jpg" alt="Steamed Rice" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Steamed Rice
+                <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Freshly steamed basmati rice, perfect with curries</p>
+              <div class="menu-price">₹80</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="rice"
+            data-id="rice-2"
+            data-name="Jeera Rice"
+            data-price="120"
+            data-image="../assests/rice/jeera_rice.jpeg"
+          >
+            <div class="menu-image">
+              <img src="../assests/rice/jeera_rice.jpeg" alt="Jeera Rice" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Jeera Rice <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Fragrant basmati rice tempered with cumin seeds</p>
+              <div class="menu-price">₹120</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="rice"
+            data-id="rice-3"
+            data-name="Vegetable Pulao"
+            data-price="150"
+            data-image="../assests/rice/Vegetable_Pulao.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/rice/Vegetable_Pulao.jpg"
+                alt="Vegetable Pulao"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Vegetable Pulao
+                <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Basmati rice cooked with mixed vegetables and mild spices</p>
+              <div class="menu-price">₹150</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="rice"
+            data-id="rice-4"
+            data-name="Veg Fried Rice with Manchurian"
+            data-price="220"
+            data-image="../assests/rice/Veg_Fried_Rice_Manchurian.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/rice/Veg_Fried_Rice_Manchurian.jpg"
+                alt="Veg Fried Rice with Manchurian"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Veg Fried Rice with Manchurian
+                <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>
+                Chinese-style fried rice served with vegetable manchurian balls
+              </p>
+              <div class="menu-price">₹220</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="rice"
+            data-id="rice-5"
+            data-name="Chicken Fried Rice"
+            data-price="250"
+            data-image="../assests/rice/Chicken_Fried_Rice.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/rice/Chicken_Fried_Rice.jpg"
+                alt="Chicken Fried Rice"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Chicken Fried Rice
+                <span class="category-badge category-nonveg">Non-Veg</span>
+              </h3>
+              <p>
+                Chinese-style fried rice with tender chicken pieces and
+                vegetables
+              </p>
+              <div class="menu-price">₹250</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Beverages -->
+          <div
+            class="menu-item"
+            data-category="beverages"
+            data-id="beverage-1"
+            data-name="Mango Lassi"
+            data-price="120"
+            data-image="../assests/beverages/mango-lassi.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/beverages/mango-lassi.jpg"
+                alt="Mango Lassi"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Mango Lassi <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Refreshing yogurt-based drink with sweet mango pulp</p>
+              <div class="menu-price">₹120</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="beverages"
+            data-id="beverage-2"
+            data-name="Masala Chai"
+            data-price="40"
+            data-image="../assests/beverages/masala-chai-indian.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/beverages/masala-chai-indian.jpg"
+                alt="Masala Chai"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Masala Chai <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Traditional Indian tea with milk and aromatic spices</p>
+              <div class="menu-price">₹40</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="beverages"
+            data-id="beverage-3"
+            data-name="Sweet Lassi"
+            data-price="100"
+            data-image="../assests/beverages/rose-lassi.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/beverages/rose-lassi.jpg"
+                alt="Sweet Lassi"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Sweet Lassi <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Sweetened yogurt drink with rose water and cardamom</p>
+              <div class="menu-price">₹100</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="beverages"
+            data-id="beverage-4"
+            data-name="Nimbu Pani"
+            data-price="60"
+            data-image="../assests/beverages/Nimbu_Pani.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/beverages/Nimbu_Pani.jpg" alt="Nimbu Pani" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Nimbu Pani <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Fresh lemonade with mint and Indian spices</p>
+              <div class="menu-price">₹60</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Sweets -->
+          <div
+            class="menu-item"
+            data-category="sweets"
+            data-id="sweet-1"
+            data-name="Gulab Jamun"
+            data-price="80"
+            data-image="../assests/sweets/gulab_jamun.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/sweets/gulab_jamun.jpg" alt="Gulab Jamun" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Gulab Jamun <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Soft milk-solid balls soaked in rose-flavored sugar syrup</p>
+              <div class="menu-price">₹80</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="sweets"
+            data-id="sweet-2"
+            data-name="Rasmalai"
+            data-price="120"
+            data-image="../assests/sweets/Rasmalai.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/sweets/Rasmalai.jpg" alt="Rasmalai" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Rasmalai <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Soft cottage cheese patties in sweetened, thickened milk</p>
+              <div class="menu-price">₹120</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="sweets"
+            data-id="sweet-3"
+            data-name="Kulfi"
+            data-price="90"
+            data-image="../assests/sweets/Kulfi.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/sweets/Kulfi.jpg" alt="Kulfi" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Kulfi <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Traditional Indian ice cream with pistachios and cardamom</p>
+              <div class="menu-price">₹90</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="sweets"
+            data-id="sweet-4"
+            data-name="Rasgulla"
+            data-price="70"
+            data-image="../assests/sweets/Rasgulla.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/sweets/Rasgulla.jpg" alt="Rasgulla" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Rasgulla <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Soft cottage cheese balls in light sugar syrup</p>
+              <div class="menu-price">₹70</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="sweets"
+            data-id="sweet-5"
+            data-name="Jalebi"
+            data-price="60"
+            data-image="../assests/sweets/Jalebi.jpg"
+          >
+            <div class="menu-image">
+              <img src="../assests/sweets/Jalebi.jpg" alt="Jalebi" />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Jalebi <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>Crispy spiral sweets soaked in sugar syrup</p>
+              <div class="menu-price">₹60</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="sweets"
+            data-id="sweet-6"
+            data-name="Gajar Ka Halwa"
+            data-price="110"
+            data-image="../assests/sweets/gajar-ka-halwa.jpg"
+          >
+            <div class="menu-image">
+              <img
+                src="../assests/sweets/gajar-ka-halwa.jpg"
+                alt="Gajar Ka Halwa"
+              />
+              <div class="view-overlay">View</div>
+            </div>
+            <div class="menu-content">
+              <h3>
+                Gajar Ka Halwa
+                <span class="category-badge category-veg">Veg</span>
+              </h3>
+              <p>
+                Traditional carrot pudding with milk, dry fruits and cardamom
+              </p>
+              <div class="menu-price">₹110</div>
+              <button class="add-to-cart btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img src="" alt="" id="modalImage" />
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDescription"></p>
+          <div class="modal-price" id="modalPrice"></div>
+          <button class="add-to-cart-modal btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>TasteRealm</h3>
+            <p>
+              An authentic Indian culinary journey through flavors and
+              traditions, creating memorable dining experiences.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>123 Spice Street<br/>Delhi, 110001</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Email: info@tasterealm.com</p>
+          </div>
+          <div class="footer-section">
+            <h4>Hours</h4>
+            <p>Monday - Thursday: 11am - 11pm</p>
+            <p>Friday - Saturday: 10am - 12am</p>
+            <p>Sunday: 10am - 2am</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2018 TasteRealm. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

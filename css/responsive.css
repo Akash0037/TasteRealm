@@ -1,0 +1,543 @@
+/* css/responsive.css */
+/* Large Desktop Screens (1440px and above) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+    }
+}
+
+/* Laptops (1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .cart-layout,
+    .order-layout {
+        gap: 2rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    /* .nav-menu {
+        gap: 0.8rem;
+    }
+     */
+    .nav-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Tablets (768px) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 0 15px;
+    }
+    
+    .navbar {
+        top: 10px;
+        padding: 0.75rem 1rem;
+    }
+    
+    .menuBar {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -300%;
+        flex-direction: column;
+        background: rgba(255, 251, 230, 0.98);
+        backdrop-filter: blur(20px);
+        width: 280px;
+        height: calc(100vh - 70px);
+        transition: var(--transition);
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        gap: 1rem;
+        border-radius: 20px 0 0 20px;
+        border-left: 1px solid var(--light-green);
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        right: 0%;
+    }
+    
+    .menuBar.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .menuBar.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menuBar.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .nav-link {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 12px;
+        text-align: left;
+        /* width: 100%; */
+        justify-content: flex-start;
+    }
+    
+    .cart-link {
+        padding: 1rem 1.5rem;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        border-top: 1px solid rgba(192, 235, 166, 0.5);
+        /* padding-top: 1.5rem; */
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    
+    .about-grid, 
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+    }
+    
+    .cart-layout,
+    .order-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .cart-item {
+        grid-template-columns: 80px 1fr auto;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+    }
+    
+    .item-image {
+        grid-row: 1 / 3;
+        align-self: start;
+    }
+    
+    .item-details {
+        grid-column: 2 / 4;
+    }
+    
+    .item-controls {
+        grid-column: 2 / 4;
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    .item-total {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: start;
+        text-align: right;
+    }
+    
+    .quantity-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .remove-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .modal-content {
+        flex-direction: column;
+        max-width: 95%;
+        margin: 1rem;
+    }
+    
+    .image-modal .modal-content img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .modal-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .modal-actions .btn-primary,
+    .modal-actions .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .promo-input {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .promo-input input {
+        width: 100%;
+    }
+    
+    .promo-input .btn-secondary {
+        width: 100%;
+    }
+    
+    .filter-buttons {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        flex: 1;
+        min-width: 120px;
+        max-width: 150px;
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+
+/* Large Phones (480-600px) */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .navbar {
+        top: 8px;
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+    
+    /* .nav-menu {
+        width: 250px;
+        padding: 5rem 1.5rem 2rem;
+    }
+     */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-button, .btn-primary, .btn-secondary {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .about-preview, .menu-preview {
+        padding: 2.5rem 0;
+    }
+    
+    .about-card, .menu-item {
+        padding: 1.2rem;
+    }
+    
+    .menu-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .menu-item p {
+        font-size: 0.9rem;
+    }
+    
+    .cart-summary,
+    .order-summary {
+        position: static;
+        padding: 1.5rem;
+    }
+    
+    .summary-details,
+    .summary-totals {
+        padding: 1rem;
+    }
+    
+    .cart-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .cart-actions .btn-primary,
+    .cart-actions .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .order-form {
+        padding: 1.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .success-modal .modal-content {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+    
+    .filter-buttons {
+        gap: 0.3rem;
+    }
+    
+    .filter-btn {
+        min-width: 100px;
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
+
+/* Small Phones (360px) */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 8px;
+    }
+    
+    .navbar {
+        top: 5px;
+        padding: 0.5rem 0.6rem;
+    }
+    
+    .nav-logo {
+        font-size: 1.1rem;
+    }
+    
+    /* .nav-menu {
+        width: 220px;
+        padding: 4rem 1rem 1.5rem;
+    } */
+    
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    
+    .page-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-hero p {
+        font-size: 1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-header p {
+        font-size: 0.9rem;
+    }
+    
+    .about-card, .menu-item {
+        padding: 1rem;
+    }
+    
+    .menu-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .menu-item p {
+        font-size: 0.85rem;
+    }
+    
+    .menu-price {
+        font-size: 1.3rem;
+    }
+    
+    .cart-item {
+        grid-template-columns: 60px 1fr;
+        gap: 0.5rem;
+        padding: 0.8rem;
+    }
+    
+    .item-details h3 {
+        font-size: 0.9rem;
+    }
+    
+    .item-controls {
+        grid-column: 1 / -1;
+        justify-content: center;
+        gap: 0.3rem;
+    }
+    
+    .quantity-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+    .remove-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+    
+    .order-form-container,
+    .order-summary {
+        padding: 1rem;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+    
+    .success-modal .modal-content {
+        padding: 1.5rem 1rem;
+        margin: 0.5rem;
+    }
+    
+    .success-modal h2 {
+        font-size: 1.5rem;
+    }
+    
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 0.3rem;
+    }
+}
+
+/* Extra Small Devices (320px and below) */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .cart-item {
+        grid-template-columns: 50px 1fr;
+    }
+    
+    .item-image img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .summary-row {
+        font-size: 0.9rem;
+    }
+}
+
+/* Fix for mobile menu body scroll */
+@media (max-width: 768px) {
+    body.menu-open {
+        overflow: hidden;
+    }
+    
+    .nav-menu.active ~ .page-hero,
+    .nav-menu.active ~ section {
+        filter: blur(2px);
+        pointer-events: none;
+    }
+}
+
+/* Landscape mode for mobile */
+@media (max-height: 500px) and (max-width: 768px) {
+    /* .nav-menu {
+        height: 100vh;
+        top: 0;
+        padding-top: 80px;
+    } */
+    
+    .hero {
+        min-height: 60vh;
+    }
+    
+    .image-modal .modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+}
