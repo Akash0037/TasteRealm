@@ -497,48 +497,24 @@
 .terms-checkbox {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     cursor: pointer;
     font-size: 0.9rem;
     color: var(--text-dark);
 }
 
-.remember-me input,
-.terms-checkbox input {
-    display: none;
-}
-
-.checkmark {
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--border-light);
-    border-radius: 5px;
-    position: relative;
-    transition: var(--transition);
+/* Real Checkbox Styling */
+.real-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--dark-green);
     flex-shrink: 0;
 }
 
-.remember-me input:checked + .checkmark,
-.terms-checkbox input:checked + .checkmark {
-    background: var(--gradient);
-    border-color: var(--dark-green);
-}
-
-.checkmark::after {
-    content: "✓";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    color: white;
-    font-size: 0.7rem;
-    font-weight: bold;
-    transition: var(--transition);
-}
-
-.remember-me input:checked + .checkmark::after,
-.terms-checkbox input:checked + .checkmark::after {
-    transform: translate(-50%, -50%) scale(1);
+.remember-me input,
+.terms-checkbox input {
+    /* Remove the display: none to show real checkbox */
 }
 
 .forgot-password {
@@ -555,12 +531,21 @@
 
 .terms-checkbox {
     margin-bottom: 25px;
+    flex-wrap: wrap;
+    line-height: 1.6;
+    align-items: flex-start;
+}
+
+.terms-text {
+    flex: 1;
+    line-height: 1.5;
 }
 
 .terms-checkbox a {
     color: var(--dark-green);
     text-decoration: none;
     font-weight: 500;
+    display: inline;
 }
 
 .terms-checkbox a:hover {
@@ -692,7 +677,8 @@
     z-index: 9999;
 }
 
-.success-modal.show {
+.success-modal.show,
+.success-modal.active {
     display: flex;
 }
 
@@ -904,6 +890,15 @@
         padding: 14px 24px;
     }
     
+    .terms-checkbox {
+        align-items: flex-start;
+        font-size: 0.85rem;
+    }
+    
+    .terms-checkbox .real-checkbox {
+        margin-top: 3px;
+    }
+    
     .floating-icons {
         display: none;
     }
@@ -943,9 +938,18 @@
         font-size: 0.8rem;
     }
     
-    .checkmark {
-        width: 18px;
-        height: 18px;
+    .terms-checkbox .real-checkbox {
+        margin-top: 2px;
+    }
+    
+    .real-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .terms-text {
+        flex: 1;
+        min-width: 0;
     }
 }
 
