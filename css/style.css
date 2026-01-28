@@ -166,6 +166,93 @@ h6 {
   animation: pulse 2s infinite;
 }
 
+/* Login Link Styles */
+.login-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(192, 235, 166, 0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.login-link:hover::before {
+  width: 150%;
+  height: 150%;
+}
+
+.login-link:hover {
+  transform: translateY(-2px);
+}
+
+.login-link.active {
+  color: var(--cream-white);
+  background: var(--gradient);
+  box-shadow: 0 4px 12px rgba(52, 121, 40, 0.3);
+}
+
+.login-link.active::before {
+  display: none;
+}
+
+.login-icon {
+  width: 22px;
+  height: 22px;
+  transition: var(--transition);
+  position: relative;
+  z-index: 1;
+}
+
+.login-link:hover .login-icon {
+  transform: scale(1.1);
+  color: var(--dark-green);
+}
+
+.login-link.active .login-icon {
+  color: var(--cream-white);
+}
+
+.login-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+.login-link:hover .login-text {
+  color: var(--dark-green);
+}
+
+.login-link.active .login-text {
+  color: var(--cream-white);
+}
+
+/* Hide login text on smaller screens to save space */
+@media (max-width: 1100px) {
+  .login-text {
+    display: none;
+  }
+  
+  .login-link {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
 .menuBar {
   display: none;
   flex-direction: column;

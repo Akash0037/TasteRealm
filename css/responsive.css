@@ -124,6 +124,23 @@
         /* padding-top: 1.5rem; */
     }
     
+    /* Login link in mobile menu */
+    .login-link {
+        padding: 1rem 1.5rem;
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+        border-radius: 12px;
+    }
+    
+    .login-link .login-text {
+        display: inline;
+    }
+    
+    .login-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
     .hero-title {
         font-size: 3rem;
         line-height: 1.2;
